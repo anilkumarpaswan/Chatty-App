@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#35ccc7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_chat"
+            android:layout_width="84dp"
+            android:layout_height="85dp"
+            android:src="@drawable/img13" />
+
+
+        <TextView
+            android:id="@+id/name_chat"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/btnAccept"
+            android:layout_toStartOf="@+id/btnAccept"
+            android:text="Contact Name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/phone_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name_chat"
+            android:layout_alignStart="@+id/name_chat"
+            android:layout_below="@+id/name_chat"
+            android:text="Phone Number"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="112dp"
+            android:layout_height="39dp"
+            android:layout_above="@+id/phone_chat"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:text="Accept"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="112dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/name_chat"
+            android:layout_toEndOf="@+id/name_chat"
+            android:layout_toRightOf="@+id/name_chat"
+            android:text="Reject"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+</LinearLayout>

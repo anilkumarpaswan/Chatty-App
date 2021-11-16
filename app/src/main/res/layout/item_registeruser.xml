@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_account_circle_black"
+        android:id="@+id/img_reg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text=" Name"
+            android:textSize="20sp"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/name_reg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email address"
+            android:textSize="15sp"
+            android:layout_below="@+id/name_reg"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/email_reg"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:text="Add Friend"
+            android:layout_marginLeft="230dp"
+            android:textColorHint="@null"/>
+</RelativeLayout>
+</LinearLayout>
